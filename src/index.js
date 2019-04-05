@@ -1,16 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-  
-  const Square = props => {  
-    return (
-        <button 
-            className="square" 
-            onClick={() => {props.onClick()}}>
-          {props.value}
-        </button>
-      );
-  }
+import Square from './Square/index.js';
+
 
   class Board extends React.Component {
     constructor(props){
